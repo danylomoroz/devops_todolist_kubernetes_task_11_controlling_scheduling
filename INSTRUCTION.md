@@ -1,5 +1,7 @@
 # Validation Instructions for Task 11: Controlling Scheduling
 
+Python 3.8+ is required to run the app locally (pip install -r requirements.txt; python manage.py migrate; python manage.py runserver)
+
 This document describes how to verify that the Kubernetes resources are correctly deployed and that the scheduling constraints (Affinity, Taints, and Tolerations) are working as expected.
 Before validation, you must deploy all resources using the provided automation script:
 **Make the script executable:**
@@ -7,7 +9,7 @@ Before validation, you must deploy all resources using the provided automation s
    chmod +x bootstrap.sh
    ./bootstrap.sh
 ```
-
+./bootstrap.sh creates the cluster from cluster.yml
 ---
 
 ## 1. Prerequisites
